@@ -1,0 +1,26 @@
+<Alloy>
+	<Window>
+	<View class="container" layout="vertical"> <!--Main Wrapper View -->
+		
+		<View height="20%">
+			<View width="70%" layout="horizontal">
+				<ImageView image="images/treatment_calculator_icon.png"/>
+				<Label class="lblTCC">Treatment Cost Calculator</Label>
+			</View>
+		</View>
+		
+		<View height="50%" class="viewSignIn" layout="vertical">
+				<Label height="10%" class="lblSignIn">Sign In</Label>	
+				<TextField class="textfieldLogin"></TextField>
+				<Button class="btnGo">Go</Button>
+		</View>
+		
+		<View height="30%">
+		
+		<Label>Treatment </Label>	
+			
+		</View>
+		
+	</View>  <!--Main Wrapper View ends-->
+	</Window>
+</Alloy>
