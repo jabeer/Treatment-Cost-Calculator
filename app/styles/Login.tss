@@ -1,0 +1,45 @@
+".container": {
+	backgroundColor: "white"
+},
+
+".lblTCC":
+{
+ 	font:
+ 	 {
+  		fontSize:24,
+	  	fontFamily:'Helvetica'  	
+  	}
+},
+
+".lblSignIn":
+{
+ 	top:'5%',
+ 	font:
+  	{
+  		fontSize:26,
+  		fontFamily:'Helvetica',
+  		fontWeight:'bold'
+   }
+},
+
+".viewSignIn":
+{
+ 	backgroundColor:'#EFEFEE'
+},
+
+".textfieldLogin":
+{
+ 
+  	borderWidth:2,
+  	borderColor:'black',
+ 	hintText:'Enter SSO# or Username',
+ 	top:'10%',
+ 	height:50,
+ 	width:'80%'
+},
+
+".btnGo":
+{
+	top:'5%',
+	width:'80%'
+}
