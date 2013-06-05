@@ -1,0 +1,19 @@
+<Alloy>
+	<Window id="mainOptPopoverWin"  >
+		<View id="popupBg"   onClick="goToDashBoard">			
+		</View>
+		<View class="popoverPointer" id="mainOptPopoverPointer" ></View>
+		<View  class="pageBg" id="mainOptPopoverContainer" layout="vertical" backgroundColor="#fff" borderColor="black" borderWidth="2" borderRadius="5" >
+		<View class="row"><ImageView id="image" image="/images/info.jpeg" left="10" height="20" width="20"/><Label right='0'>About this app</Label></View>	
+	    <Label class="row" onClick="signOutofApp">Sign Out</Label>
+	    </View>
+     </Window>
+	    
+	    
+	 <!-- <Popover title='Add Appointment' platform="ios" id="mainOptPopover">
+		<View layout="vertical" top="0" class="pageBg" id="mainOptPopoverContainer">
+		<View><Label>About this app</Label></View>	
+	    <Label>Sign Out</Label>
+        </View>
+     </Popover> -->
+</Alloy>
