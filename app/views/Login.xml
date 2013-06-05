@@ -17,7 +17,8 @@
 		
 		<View height="30%">
 		
-		<Label>Treatment </Label>	
+		<ImageView class="logoGE" image="images/geLogo.png"/>
+		<ImageView class="logoTruven" image="images/truvenLogo.png"/>
 			
 		</View>
 		

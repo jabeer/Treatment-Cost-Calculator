@@ -42,4 +42,20 @@
 {
 	top:'5%',
 	width:'80%'
+},
+
+".logoGE":
+{
+	bottom: 60,
+	left:'4%',
+	height:60,
+	width:60
+},
+
+".logoTruven":
+{
+	bottom: 60,
+	right:'4%',
+	height:55,
+	width:120
 }
