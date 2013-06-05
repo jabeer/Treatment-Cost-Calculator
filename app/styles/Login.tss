@@ -6,8 +6,8 @@
 {
  	font:
  	 {
-  		fontSize:24,
-	  	fontFamily:'Helvetica'  	
+  		fontSize:22,
+	  	fontFamily:'Comic Sans MS'  	
   	}
 },
 
@@ -17,7 +17,7 @@
  	font:
   	{
   		fontSize:26,
-  		fontFamily:'Helvetica',
+  		fontFamily:'Comic Sans MS',
   		fontWeight:'bold'
    }
 },
@@ -38,7 +38,7 @@
  	width:'80%'
 },
 
-".btnGo":
+"#btnGo":
 {
 	top:'5%',
 	width:'80%'

@@ -12,7 +12,7 @@
 		<View height="50%" class="viewSignIn" layout="vertical">
 				<Label height="10%" class="lblSignIn">Sign In</Label>	
 				<TextField class="textfieldLogin"></TextField>
-				<Button class="btnGo">Go</Button>
+				<Button  id="btnGo">Go</Button>
 		</View>
 		
 		<View height="30%">
