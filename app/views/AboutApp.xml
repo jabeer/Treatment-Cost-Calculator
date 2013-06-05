@@ -1,0 +1,5 @@
+<Alloy>
+	<Window modal="true">
+		<Label>ABout this app</Label>
+	</Window>
+</Alloy>
