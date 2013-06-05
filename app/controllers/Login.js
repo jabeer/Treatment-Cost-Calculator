@@ -1,9 +1,10 @@
 /*
+ * Method Name: doLogin
  * Description:Goes to homescreen on clicking Go
  *  
  */
-
-$.btnGo.addEventListener("click", function()
-{
+function doLogin(event){
 	Alloy.createController('tabBar').getView().open();
-});
+}
+
+
