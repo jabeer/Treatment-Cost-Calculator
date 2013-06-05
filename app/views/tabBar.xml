@@ -1,0 +1,27 @@
+<Alloy>
+
+
+	 <TabGroup backgroundColor="white" >
+            <Tab id="tab1"  icon="images/homeIcon.jpeg">
+                <Window id="win1" title="Tab 1" >
+                   <Label id="label1" color="#999">I am Window 1</Label>
+                </Window>
+            </Tab>
+            <Tab id="tab2"  icon="images/searchIcon.jpeg">
+                <Window id="win2" title="Tab 2">
+                    <Label id="label2" color="#999">I am Window 2</Label>
+                </Window>
+            </Tab>
+            <Tab id="tab1"  icon="images/favoritesIcon.jpeg">
+                <Window id="win1" title="Tab 1">
+                   <Label id="label1" color="#999">I am Window 3</Label>
+                </Window>
+            </Tab> 
+            <Tab id="tab1"  icon="images/settingsIcon.jpeg">
+                <Window id="win1" title="Tab 1">
+                   <Label id="label1" color="#999">I am Window 4</Label>
+                </Window>
+            </Tab>
+        </TabGroup> 
+	 
+</Alloy>
