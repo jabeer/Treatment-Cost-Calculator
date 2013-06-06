@@ -1,0 +1,11 @@
+".container": {
+	backgroundColor: "white"
+},
+
+".lblDashboardItem":{
+font:
+	{
+	fontSize:20
+	},
+	color:'black'
+}

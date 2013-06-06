@@ -1,0 +1,38 @@
+<Alloy>
+	<View class="container">
+		
+		<DashboardView platform="ios" left="5%">
+			<DashboardItem image="/images/plus.png" label="Urgent Care "  />
+			<DashboardItem image="/images/urgent_care.png"   label="Cost Calculator" />
+			<DashboardItem image="/images//urgent_care.png"  label="Physician Finder"/>
+			<DashboardItem image="/images/Insurance.png"    label="Insurance" />
+			
+		</DashboardView>
+		
+		<View layout="vertical" left="5%" width="90%" height="90%" platform="android">
+			<View layout="horizontal" width="100%" height="50%"  >
+				<View  width="50%" height="100%" layout="vertical">
+					<View backgroundImage="/images/plus.png" height="80%"></View>
+					<Label class="lblDashboardItem" >Urgent Care</Label>
+				</View>
+				<View  layout="vertical" width="50%" height="100%" >
+					<View backgroundImage="/images/urgent_care.png" height="80%"></View>
+					<Label class="lblDashboardItem" >Cost Calculator</Label>
+				</View>
+			</View>
+			<View layout="horizontal" width="100%" height="50%" >
+
+				<View  layout="vertical" width="50%" height="100%" >
+					<View backgroundImage="/images/urgent_care.png" height="80%"></View>
+					<Label class="lblDashboardItem">Physician Finder</Label>
+				</View>
+				<View layout="vertical"  width="50%" height="100%" >
+					<View backgroundImage="/images/Insurance.png" height="80%"></View>
+					<Label class="lblDashboardItem">Insurance</Label>
+				</View>
+				
+			</View>
+		</View>
+			
+	</View>
+</Alloy>
