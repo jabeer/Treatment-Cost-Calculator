@@ -2,23 +2,23 @@
 
 
 	 <TabGroup backgroundColor="white" >
-            <Tab id="tab1" title="Home" icon="images/house.png">
-                <Window id="win1" title="Tab 1" >
+            <Tab id="tabHome" title="Home" icon="images/house.png">
+                <Window id="winHome" title="Tab 1" >
                   <Require src="Dashboard"></Require>
                 </Window>
             </Tab>
-            <Tab id="tab2" title="Search" icon="images/magnify.png">
-                <Window id="win2" title="Tab 2">
+            <Tab id="tabSearch" title="Search" icon="images/magnify.png">
+                <Window id="winSearch" title="Tab 2">
                     <Label id="label2" color="#999">I am Window 2</Label>
                 </Window>
             </Tab>
-            <Tab id="tab1" title="Favorites" icon="images/heart.png">
-                <Window id="win1" title="Tab 1">
+            <Tab id="tabFav" title="Favorites" icon="images/heart.png">
+                <Window id="winFav" title="Tab 1">
                    <Label id="label1" color="#999">I am Window 3</Label>
                 </Window>
             </Tab> 
-            <Tab id="tab1" title="Settings" icon="images/gear.png">
-                <Window id="win1" title="Tab 1">
+            <Tab id="tabSettings" title="Settings" icon="images/gear.png">
+                <Window id="winSettings" title="Tab 1">
                    <Label id="label1" color="#999">I am Window 4</Label>
                 </Window>
             </Tab>
