@@ -4,7 +4,7 @@
 	 <TabGroup backgroundColor="white" >
             <Tab id="tab1"  icon="images/homeIcon.jpeg">
                 <Window id="win1" title="Tab 1" >
-                   <Label id="label1" color="#999">I am Window 1</Label>
+                  <Require src="Dashboard"></Require>
                 </Window>
             </Tab>
             <Tab id="tab2"  icon="images/searchIcon.jpeg">
