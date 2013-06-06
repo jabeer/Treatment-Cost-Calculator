@@ -1,0 +1,35 @@
+".container": {
+	backgroundColor: "white"
+}
+"#mainOptPopoverContainer":{
+
+      height:'70',
+      width:'160',
+      top:'50',
+      right:'10'
+}
+"#popupBg":{
+	
+	// backgroundColor:'black',
+	// opacity:0.5,
+	 height:"100%",
+	  width:"100%"
+}
+"Popover":
+{
+	height:'100',
+	width:'100'
+}
+".popoverPointer":{
+		top:40,
+		right:20,
+		height : 25,
+		width : 25,
+		backgroundColor : '#000'
+}
+
+".row":{
+height:'35',
+right:'10'
+
+}
