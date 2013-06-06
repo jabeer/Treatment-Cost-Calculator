@@ -2,6 +2,7 @@
 	backgroundColor: "white"
 },
 
+
 ".lblDashboardItem":{
 font:
 	{
