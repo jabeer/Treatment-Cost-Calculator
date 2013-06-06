@@ -1,3 +1,5 @@
-".container": {
-	backgroundColor: "white"
+".container[platform=android]": {
+	height: "20%",
+	top :"10%",	
+	backgroundColor: "green"
 }

@@ -1,5 +1,5 @@
 <Alloy >
-	<Window modal="true"  navBarHidden="false"  fullscreen="false" id="AboutApp"  title="About this App.."  layout="vertical" >
+	<Window modal="true"  navBarHidden="false"  fullscreen="false" id="AboutApp"  title="About this App.."  layout="vertical" class="container" >
 			<Label>This app provides in-network cost estimates for many medical procedures such as a biospy, ultrasound, colonoscopy or a flucence. Medical Procedure are ofthe a "one-time" medical Events.</Label>
 			<Button title="Close" onClick="closeModelWindow"></Button>
 			
