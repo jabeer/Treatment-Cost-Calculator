@@ -1,9 +1,9 @@
 <Alloy>
 	<View class="container">
 		
-		<DashboardView platform="ios" left="5%">
-			<DashboardItem image="/images/plus.png" label="Urgent Care "  />
-			<DashboardItem image="/images/urgent_care.png"   label="Cost Calculator" />
+		<DashboardView platform="ios" left="5%" id="dashboardView">
+			<DashboardItem image="/images/plus.png" label="Urgent Care " />
+			<DashboardItem image="/images/urgent_care.png"   label="Cost Calculator"  />
 			<DashboardItem image="/images//urgent_care.png"  label="Physician Finder"/>
 			<DashboardItem image="/images/Insurance.png"    label="Insurance" />
 			
