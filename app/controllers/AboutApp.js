@@ -8,7 +8,6 @@
 
 
 
-
 function closeModelWindow(event){
 	$.AboutApp.close();
 }

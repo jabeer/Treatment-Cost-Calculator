@@ -13,7 +13,7 @@
    backgroundColor:"black",
    height:"40"
 }
-".closeIcon[platform=android]":{
+".closeIcon[platform=android]":{ 
 	right:15,
 	height:30,
 	width:30

@@ -6,4 +6,5 @@
 			<Button top="15" title="Close" onClick="closeModelWindow"></Button>
 		</View>	
 	</Window>
+
 </Alloy>
