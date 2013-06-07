@@ -1,0 +1,5 @@
+<Alloy>
+	<Window backgroundColor="white">
+	<Button onClick="addContacts">Add to Contacts</Button>
+	</Window>
+</Alloy>
