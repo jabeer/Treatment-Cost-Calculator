@@ -1,9 +1,9 @@
-var calc = require('com.andorid.sample');
-
-var nativeView=calc.createExample({message: "hello world"});
-
-$.AboutApp.add(nativeView);
-
+//var calc = require('com.andorid.sample');
+// 
+// var nativeView=calc.createExample({message: "hello world"});
+// 
+// $.AboutApp.add(nativeView);
+// 
 
 
 
