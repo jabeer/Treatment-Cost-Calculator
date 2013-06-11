@@ -5,7 +5,7 @@
 			<DashboardItem image="/images/plus.png" label="Urgent Care " />
 			<DashboardItem image="/images/urgent_care.png"   label="Cost Calculator"  />
 			<DashboardItem image="/images//urgent_care.png"  label="Physician Finder"/>
-			<DashboardItem image="/images/Insurance.png"    label="Insurance" />
+			<DashboardItem image="/images/Insurance.png"    label="Insurance" onClick="showMap" />
 			
 		</DashboardView>
 		
@@ -27,7 +27,7 @@
 					<View backgroundImage="/images/urgent_care.png" height="80%"></View>
 					<Label class="lblDashboardItem">Physician Finder</Label>
 				</View>
-				<View layout="vertical"  width="50%" height="100%" >
+				<View layout="vertical"  width="50%" height="100%" onClick="showMap">
 					<View backgroundImage="/images/Insurance.png" height="80%"></View>
 					<Label class="lblDashboardItem">Insurance</Label>
 				</View>

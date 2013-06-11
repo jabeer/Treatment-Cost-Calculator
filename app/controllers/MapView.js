@@ -44,7 +44,6 @@ Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
 });*/
 
 
-
 if(OS_IOS)
 {
 
