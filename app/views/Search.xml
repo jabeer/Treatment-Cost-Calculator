@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" >
+		<View id="searchView" >
+
+		</View>
+	</Window>
+</Alloy>

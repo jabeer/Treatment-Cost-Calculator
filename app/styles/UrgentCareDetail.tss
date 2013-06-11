@@ -1,0 +1,16 @@
+".container": {
+	backgroundColor: "white"
+},
+"#UrgentCareText":{
+font:{
+fontWeight:'bold',
+fontSize:16
+}
+},
+"#UrgentCareAddress":{
+color:"#545454",
+font:{
+fontWeight:'bold',
+fontSize:14
+}
+}

@@ -1,0 +1,44 @@
+".container": {
+	backgroundColor: "#BDBDBD"
+},
+".formCls":{
+borderRadius:"3px",
+borderColor:"white",
+borderWidth:"1px",
+height:"30" ,
+width:"90%" ,
+left:"5%" ,
+backgroundColor:"white"
+
+},
+".form2Cls":{
+borderRadius:"3px",
+borderColor:"white",
+borderWidth:"1px",
+height:"40" ,
+width:"90%" ,
+left:"5%" ,
+backgroundColor:"white"
+
+},
+".rightLbl":{
+right:"0",
+color:"#A4A4A4",
+font:{
+fontSize:14
+}
+},
+".leftLbl":{
+left:"10",
+font:{
+fontSize:14,
+fontWeight:'bold'
+}
+},
+"#profileAdd":{
+left:"15",
+top:"10",
+ color:"#343434",
+  font:{fontSize:12}
+
+}

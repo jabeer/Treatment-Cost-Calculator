@@ -1,0 +1,50 @@
+<Alloy>
+	<Window class="container">
+		<ScrollView >
+		<View  layout="vertical" >
+			
+		<Label text="Chuck Smith" id="personName" top="20"/>
+		<TextArea id="textArea"
+            
+            color="black" textAlign="center" value="This information is used to provide the most accurate cost estimates possible"
+            top="8" width="230" height="70" editable="false" backgroundColor="#BDBDBD"/>
+		<View  class="formCls" >
+			<Label text="Full Name" class="leftLbl"/>
+			<Label text="Chuck Smith" class="rightLbl"/>
+		</View>
+		<View class="formCls">
+			<Label text="Gender"  class="leftLbl"/>
+			<Label text="Male" class="rightLbl"/>
+		</View>
+		<View class="formCls">
+			<Label text="Age"  class="leftLbl"/>
+			<Label text="23" class="rightLbl"/>
+		</View>
+		<View  class="formCls">
+			<Label text="Email"  class="leftLbl"/>
+			<Label text="chuck@email.com" class="rightLbl"/>
+		</View>
+		<Label text="Profile Address" id="profileAdd"/>
+				<View class="form2Cls" layout="horizontal">
+			<Label text="Home Address"  top="12" class="leftLbl"/>
+			</View>
+			<View layout="horizontal" class="form2Cls" top="1">
+			<TextArea id="homeAddress" 
+           textAlign="left" value="123 S.Main Sl,Aggg, 0030 New York,NY"
+             editable="false" backgroundColor="white" width="200"/>
+		</View>
+			<View class="form2Cls" layout="horizontal" top="10">
+			<Label text="My Daughter's school Address" top="12" class="leftLbl"/>
+			</View>
+				<View  layout="horizontal" class="form2Cls" top="1">
+			<TextArea  id="daughterAddress"  textAlign="left" value="123 S.Main Sl,Aggg, 0030 New York,NY"
+              editable="false" backgroundColor="white" width="200"/>
+		</View>
+		<View class="form2Cls" top="10" layout="horizontal">
+			<ImageView id="addImage" image="/images/addImage.png" left="30%" top="10"/><Label text="Add Location" top="7"/>
+		</View>
+		
+		</View>
+		</ScrollView>
+	</Window>
+</Alloy>
