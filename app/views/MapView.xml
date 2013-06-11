@@ -1,0 +1,31 @@
+<Alloy>
+	<Window>
+		<View class="container" layout="vertical" platform="ios">
+			<Toolbar platform="ios" title="Map">
+				<Items>
+					<Button id="btnback" onClick="goToDashboard">Back</Button>
+				</Items>
+			</Toolbar>
+			<View id="mapview" ns="Ti.Map"
+			animate="true" regionFit="true" userLocation="true"
+			mapType="Ti.Map.STANDARD_TYPE" >
+
+				<Annotation id="mountainView"
+				pincolor="Titanium.Map.ANNOTATION_RED"
+				myid="1"/>
+
+				<!-- Place other child views here, such as an ImageView to add an overlay. -->
+
+			</View>
+		</View>
+		<View  class="container" layout="vertical" platform="android">
+			<View height="50" layout="horizontal">
+				<Button id="btnback" left="10" onClick="goToDashboard">Back</Button>
+				<TextField id="placeSearch" width="250" />
+				<Button onClick="searchPlaceInMap">Search</Button>
+			</View>
+			<View  id="viewMap"></View>
+
+		</View>
+	</Window>
+</Alloy>
