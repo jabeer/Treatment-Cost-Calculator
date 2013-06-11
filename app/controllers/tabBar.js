@@ -1,1 +1,1 @@
-
+Alloy.Globals.mainWin = $.winHome;

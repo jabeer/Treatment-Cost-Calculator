@@ -17,3 +17,9 @@ function showMap()
 {
 	Alloy.createController('MapView').getView().open();
 }
+
+
+function showUrgentCare()
+{
+	Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareList').getView());
+}
