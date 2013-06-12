@@ -1,0 +1,26 @@
+".container": {
+	backgroundColor: "white"
+},
+
+".lblResult[platform=android]":
+{
+	font:
+	{
+		fontSize:20
+	},
+	color:'black'
+},
+
+".lblResult[platform=ios]":
+{
+	font:
+	{
+		fontSize:14
+	}
+},
+
+".lstUC":
+{
+	height:100,
+	accessoryType:Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE
+}
