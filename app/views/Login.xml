@@ -4,7 +4,7 @@
 		
 		<View height="20%">
 			<View width="70%" layout="horizontal">
-				<ImageView image="images/treatment_calculator_icon.png"/>
+				<ImageView image="/images/treatment_calculator_icon.png"/>
 				<Label class="lblTCC">Treatment Cost Calculator</Label>
 			</View>
 		</View>
@@ -17,8 +17,8 @@
 		
 		<View height="30%">
 		
-		<ImageView class="logoGE" image="images/geLogo.png"/>
-		<ImageView class="logoTruven" image="images/truvenLogo.png"/>
+		<ImageView class="logoGE" image="/images/geLogo.png"/>
+		<ImageView class="logoTruven" image="/images/truvenLogo.png"/>
 			
 		</View>
 		
