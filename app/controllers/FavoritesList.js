@@ -50,7 +50,7 @@ var myTemplate = {
             
          }       
         ],
-        properties : {accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE }
+        properties : {height:'50',accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE }
        
 };
 if(Ti.Platform.osname=="android")
@@ -59,7 +59,7 @@ if(Ti.Platform.osname=="android")
 myTemplate.childTemplates[1].properties.top = '2';
 myTemplate.childTemplates[1].properties.font={fontSize:'12dp'};
 myTemplate.childTemplates[0].properties.font={fontSize:'14dp'};
-
+myTemplate.properties.height="70";
 }
 var redTemplate,listView;
 redTemplate = JSON.parse(JSON.stringify(myTemplate));
@@ -83,10 +83,14 @@ borderRadius:'6px',
 borderWidth:'3px',
 width:'90%',
 left:'5%',
-top:"10",
-height:"185"
+top:"40",
+height:"200"
 });
-
+if(Ti.Platform.osname=="android")
+{
+	listView.top="80";
+listView.height="281";	
+}
 var fruitSection = Ti.UI.createListSection();
 var fruitDataSet = [
    

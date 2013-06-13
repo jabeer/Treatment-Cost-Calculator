@@ -105,7 +105,7 @@ borderRadius:"6px",
 borderWidth:"3px",
 borderColor:'black',
 top:"10%",
-height: "222"
+height: "250"
 });
 
 if(Ti.Platform.osname=="android")
