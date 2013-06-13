@@ -26,44 +26,65 @@ var myTemplate = {
         
         {                            
             type: 'Ti.UI.Label',     
-            bindId: 'info',          
+            bindId: 'info',    
+                   
             properties: { 
-                      
-                color: 'black',
-                font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
-                left: '10', top: '10',
+                 
+                 	 color: 'black',
+                 font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
+                left: '10', top: '10'
+                 
+               
             }
             
         },
         {                            
             type: 'Ti.UI.Label',     
             bindId: 'es_info',       
-            properties: {           
-                color: 'grey',
-                font: { fontFamily:'Arial', fontSize: '12dp',fontWeight:'bold' },
-                right: '10', top: '2',
-            },
+            properties: {   
+            	    
+                 color: 'black',
+                 font: { fontFamily:'Arial', fontSize: '12dp',fontWeight:'bold' },
+                 right: '10', top: '2'
+            }
             
          }       
         ],
         properties : {accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE }
        
 };
-var redTemplate = JSON.parse(JSON.stringify(myTemplate));
+if(Ti.Platform.osname=="android")
+{
+ myTemplate.childTemplates[1].properties.right = '28';
+myTemplate.childTemplates[1].properties.top = '2';
+myTemplate.childTemplates[1].properties.font={fontSize:'12dp'};
+myTemplate.childTemplates[0].properties.font={fontSize:'14dp'};
+
+}
+var redTemplate,listView;
+redTemplate = JSON.parse(JSON.stringify(myTemplate));
 //redTemplate.events.click = iSelect;
 redTemplate.childTemplates[0].properties.color = '#A4A3A3';
 redTemplate.childTemplates[1].properties.color = '#A4A3A3';
-redTemplate.childTemplates[1].properties.right = '25';
+redTemplate.childTemplates[1].properties.right = '30';
 redTemplate.childTemplates[1].properties.top = '10';
 redTemplate.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
-var listView = Ti.UI.createListView({templates: { 'template': myTemplate,'bdgZero': redTemplate},defaultItemTemplate: 'template',
+if(Ti.Platform.osname=="android")
+{
+redTemplate.childTemplates[0].properties.font={fontSize:'14dp'};	
+}
+
+	
+
+
+listView = Ti.UI.createListView({templates: { 'template': myTemplate,'bdgZero': redTemplate},defaultItemTemplate: 'template',
 borderColor:'black',
 borderRadius:'6px',
 borderWidth:'3px',
 width:'90%',
 left:'5%',
 top:"10",
-height:"179"
+height:"185"
 });
 
 var fruitSection = Ti.UI.createListSection();

@@ -1,11 +1,11 @@
 var CustomData = [
-{ tlogo:'images/phy.png', title:"Find an in-network", item:'Urgent care Centers',hasChild:true },
-{ tlogo:'images/phy.png', title:"Estimates and provides for", item:'Medical Procedures', hasChild:true },
-{ tlogo:'images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
-{ tlogo:'images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
-{ tlogo:'images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
-{ tlogo:'images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
-{ tlogo:'images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Urgent care Centers',hasChild:true },
+{ tlogo:'/images/phy.png', title:"Estimates and provides for", item:'Medical Procedures', hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
 
 ];
 var rdata=[];
@@ -34,6 +34,7 @@ height:16
 var item =  Titanium.UI.createLabel({
 text:CustomData[i].item,
 font:{fontSize:14,fontWeight:'bold'},
+color:'black',
 width:'auto',
 textAlign:'left',
 top:30,

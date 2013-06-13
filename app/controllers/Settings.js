@@ -18,7 +18,7 @@ var toggleTemplate=
             type: 'Ti.UI.Label',     
             bindId: 'infoText',       
             properties: {           
-                color: 'grey',
+                color: 'gray',
                 font: { fontFamily:'Arial', fontSize: '12dp'},
                 left: '10', top: '30',
             },
@@ -33,10 +33,21 @@ var toggleTemplate=
             
          }            
         ],
-        properties : {accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE }
+        properties : {height:"50",accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE }
        
 };
-  
+ 
+ if(Ti.Platform.osname=="android")
+{
+	 toggleTemplate.properties.height="70";
+ toggleTemplate.childTemplates[2].properties.right = '28';
+ toggleTemplate.childTemplates[2].properties.top = '5';
+ toggleTemplate.childTemplates[2].properties.font={fontSize:'12dp'};
+toggleTemplate.childTemplates[1].properties.top = '35';
+toggleTemplate.childTemplates[1].properties.font={fontSize:'14dp'};
+toggleTemplate.childTemplates[0].properties.font={fontSize:'14dp'};
+
+} 
 var listTemplate={
 	childTemplates: [
         
@@ -55,7 +66,7 @@ var listTemplate={
             type: 'Ti.UI.Label',     
             bindId: 'infoText',       
             properties: {           
-                color: 'grey',
+                color: 'gray',
                 font: { fontFamily:'Arial', fontSize: '12dp'},
                 left: '10', top: '30',
             },
@@ -72,11 +83,20 @@ var listTemplate={
             
          }            
         ],
-        properties : {accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE }
+        properties : {height:"50",accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE }
        
 };
+if(Ti.Platform.osname=="android")
+{
+	listTemplate.properties.height="70";
+ listTemplate.childTemplates[2].properties.right = '28';
+ listTemplate.childTemplates[2].properties.top = '10';
+ listTemplate.childTemplates[2].properties.font={fontSize:'12dp'};
+listTemplate.childTemplates[1].properties.font={fontSize:'14dp'};
+listTemplate.childTemplates[1].properties.top = '35';
+listTemplate.childTemplates[0].properties.font={fontSize:'14dp'};
 
-
+}
 
 var searchListView=Ti.UI.createListView({templates: { 'template': listTemplate,'toggleSwitch': toggleTemplate},defaultItemTemplate: 'template',
 width:"90%",
@@ -88,7 +108,10 @@ top:"10%",
 height: "222"
 });
 
-
+if(Ti.Platform.osname=="android")
+{
+	searchListView.height="360";
+}
 var searchSection = Ti.UI.createListSection();
 
 searchSection.setItems([
