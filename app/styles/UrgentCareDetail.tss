@@ -1,16 +1,36 @@
 ".container": {
 	backgroundColor: "white"
 },
-"#UrgentCareText":{
+"#UrgentCareText[platform=ios]":{
 font:{
 fontWeight:'bold',
 fontSize:16
 }
 },
-"#UrgentCareAddress":{
+"#UrgentCareAddress[platform=ios]":{
+color:"#545454",
+font:{
+fontWeight:'bold',
+fontSize:14
+}},
+
+"#UrgentCareText[platform=android]":{
+font:{
+fontWeight:'bold',
+fontSize:16
+}
+},
+"#UrgentCareAddress[platform=android]":{
 color:"#545454",
 font:{
 fontWeight:'bold',
 fontSize:14
 }
+},
+".staticList[platform=android]":{
+
+bottom:"0",  height:"140"
+},
+".staticList[platform=ios]":{
+bottom:"0",  height:"130"
 }
