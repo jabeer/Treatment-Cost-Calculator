@@ -1,6 +1,6 @@
 <Alloy>
-	<Window backgroundColor="white">
-	<View id="viewBadge" >
+
+	<View id="viewBadge"  backgroundColor="white">
 	</View>
-	</Window>
+
 </Alloy>

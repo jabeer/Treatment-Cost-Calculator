@@ -1,6 +1,6 @@
 <Alloy>
-	<Window class="container">
-	<View  top="20">
+	
+	<View  top="20" backgroundColor="white">
 
 		<View top="30"  height="22">
 		<Label  text="Urgent Care Of PlyMouth" left="2%" width="68%" id="UrgentCareText"/>
@@ -35,5 +35,5 @@
 		
 	</TableView>
 	</View>
-	</Window>
+	
 </Alloy>

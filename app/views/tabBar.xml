@@ -6,18 +6,18 @@
                 </Window>
             </Tab>
             <Tab id="tabSearch" title="Search" icon="images/magnify.png">
-                <Window id="winSearch" title="Tab 2">
-                    <Label id="label2" color="#999">I am Window 2</Label>
+                <Window id="winSearch" title="Search">
+                     <Require src="Search"></Require>
                 </Window>
             </Tab>
             <Tab id="tabFav" title="Favorites" icon="images/heart.png">
-                <Window id="winFav" title="Tab 1">
-                   <Label id="label1" color="#999">I am Window 3</Label>
+                <Window id="winFav" title="Favorites">
+                   <Require src="FavoritesList"></Require>
                 </Window>
             </Tab> 
             <Tab id="tabSettings" title="Settings" icon="images/gear.png">
-                <Window id="winSettings" title="Tab 1">
-                   <Label id="label1" color="#999">I am Window 4</Label>
+                <Window id="winSettings" title="Settings">
+                    <Require src="Settings"></Require>
                 </Window>
             </Tab>
         </TabGroup> 
