@@ -32,8 +32,8 @@ Titanium.Geolocation.getCurrentPosition(function(e)
 
 });
 
-Titanium.Geolocation.purpose = "For Treatment Test Calculator Application";
-Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
+Ti.Geolocation.purpose = "For Treatment Test Calculator Application";
+Ti.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
 /*Titanium.Geolocation.addEventListener('location', function(e)
 {
 	 longitude = e.coords.longitude;
@@ -44,7 +44,7 @@ Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
 });*/
 
 
-if(OS_IOS)
+/*if(OS_IOS)
 {
 
  
@@ -55,13 +55,19 @@ if(OS_IOS)
 	$.mapview.region = {latitude:latitude, longitude:longitude, latitudeDelta:0.01, longitudeDelta:0.01};
 	
 
-}
+}*/
 
+var mapview, MapModule;
+if(OS_IOS)
+{
+	mapview =$.mapview;
+	mountainView = $.mountainView;
+}
 
 if(OS_ANDROID)
 {
 	
-	var MapModule = require('ti.map');
+	 MapModule = require('ti.map');
 	
 	
 	var appc = MapModule.createAnnotation({
@@ -72,7 +78,7 @@ if(OS_ANDROID)
 	});
 		
 	
-	var mapview = MapModule.createView({mapType:MapModule.NORMAL_TYPE,
+	 mapview= MapModule.createView({mapType:MapModule.NORMAL_TYPE,
 	userLocation: true,
     mapType: MapModule.NORMAL_TYPE,
     animate: true,
@@ -84,21 +90,39 @@ if(OS_ANDROID)
 	
 	
 	
-	function searchPlaceInMap(e)
+	
+}
+
+
+
+function searchPlaceInMap(e)
 	{
 		
-		Titanium.Geolocation.forwardGeocoder($.placeSearch.value, function(e)
+		Titanium.Geolocation.forwardGeocoder('Margao, Goa', function(e)
 		{
+			alert(e.latitude);
+			alert(e.longitude);
+			
+			if(OS_IOS)
+			{
+			mountainView.latitude = e.latitude;
+			mountainView.longitude = e.longitude;
+			mapview.annotations = [mountainView];
+			}
 			
 			mapview.region={latitude: e.latitude, longitude: e.longitude, latitudeDelta: 0.1, longitudeDelta: 0.1 };
-			appc = MapModule.createAnnotation({
+			
+			if(OS_ANDROID)
+			{
+			 appc = MapModule.createAnnotation({
   			  latitude: e.latitude,
    			 longitude: e.longitude,
   		 	 pincolor: MapModule.ANNOTATION_GREEN,
    
 			});
-		mapview.annotations=[appc];
+			mapview.annotations=[appc];
+			}
+		
 		});
 		
 	}
-}

@@ -2,18 +2,18 @@
 	<Window class="container">
 	<View  top="20">
 		<View top="30" layout="horizontal" height="22">
-		<Label  text="Urgent Care Of PlyMouth" left="2%" width="60%" id="UrgentCareText"/>
+		<Label left="2%" width="60%" id="UrgentCareText"/>
 		<ImageView  id="FavInDetailImage" image="/images/smallHeart.png" left="10" />
 		<Label  text="5.15 mi"  color="gray" left="10"/>
 	</View>
-	<Label  top= "54" text="20 Main Street, Plymouth,MA 00012" left="2%" id="UrgentCareAddress"/>
-	<Label top= "75" text="(508)555-1212" color="red" left="2%" />
+	<Label  top= "54"  left="2%" id="UrgentCareAddress"/>
+	<Label top= "75" id="UrgentCarePhone" color="red" left="2%" />
 	<View top="90"  height="15">
-	<ImageView  image="images/map.png"  left="70%" />
-	<Label  text="Map" left="76%" color="gray"/>
+	<ImageView  image="images/map.png"  left="70%" onClick="showMap"/>
+	<Label  text="Map" left="76%" color="gray" onClick="showMap"/>
 	</View>
     <View top="160"  height="45">
-	<Button  image="images/openbook.png" height="40" left="5" width="45%" color="#545454">Add to Contacts</Button>
+	<Button  image="images/openbook.png" height="40" left="5" width="45%" color="#545454" onClick="authorizeAndAddContacts">Add to Contacts</Button>
 	<Button right="5" image="images/smallFav.png"  height="40" width="45%" color="#3545454">Add to Favorites</Button>
 	</View> 
 	

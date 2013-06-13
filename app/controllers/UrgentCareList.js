@@ -75,14 +75,27 @@ var ucDataSet = [
     // the text property of info maps to the text property of the title label
     // the text property of es_info maps to text property of the subtitle label
     // the image property of pic maps to the image property of the image view
-    {   centre: {text: 'Urgent Care of Plymouth'}, street: {text: '10 Main Street, Plymouth'}, phone: {text: '(508) 555-1213'}, distance:{text: '5.5mi'} },
-    {  centre: {text: 'First Choice of Urgent Care'}, street: {text: '405, Ford Rd Canton'}, phone: {text: '(508) 555-1276'}, distance:{text: '7.2mi'}, favorite:{image:'/images/smallHeart.png'}},
+    { centre: {text: 'Urgent Care of Plymouth'}, street: {text: '10 Main Street, Plymouth'}, phone: {text: '(508) 555-1213'}, distance:{text: '5.5mi'} },
+    { centre: {text: 'First Choice of Urgent Care'}, street: {text: '405, Ford Rd Canton'}, phone: {text: '(508) 555-1276'}, distance:{text: '7.2mi'}, favorite:{image:'/images/smallHeart.png'}},
     { centre: {text: 'Urgent Care Centres'}, street: {text: '34095 Plymouth Rd, Allen Park'}, phone: {text: '(508) 555-9876'}, distance:{text: '11mi'} },
-    {  centre: {text: 'Emergency & Urgent Care'}, street: {text: '12095 Plymouth Rd, Allen Park'}, phone: {text: '(508) 555-1476'}, distance:{text: '11.2mi'}, favorite:{image:'/images/smallHeart.png'}}
+    { centre: {text: 'Emergency & Urgent Care'}, street: {text: '12095 Plymouth Rd, Allen Park'}, phone: {text: '(508) 555-1476'}, distance:{text: '11.2mi'}, favorite:{image:'/images/smallHeart.png'}}
 
 ];
 ucSection.setItems(ucDataSet);
 sections.push(ucSection);
 
 listView.setSections(sections);
+
+
+
+
+
+
+listView.addEventListener('itemclick', function(e)
+{
+	var item = e.section.getItemAt(e.itemIndex)
+	Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareDetail', item).getView());
+	
+	
+});
 $.viewUrgentCare.add(listView);
