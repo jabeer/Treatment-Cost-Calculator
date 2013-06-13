@@ -22,8 +22,6 @@
 		<View  class="container" layout="vertical" platform="android">
 			<View height="50" layout="horizontal">
 				<Button id="btnback" left="10" onClick="goToDashboard">Back</Button>
-				<TextField id="placeSearch" width="250" />
-				<Button onClick="searchPlaceInMap">Search</Button>
 			</View>
 			<View  id="viewMap"></View>
 

@@ -94,6 +94,7 @@ listView.setSections(sections);
 listView.addEventListener('itemclick', function(e)
 {
 	var item = e.section.getItemAt(e.itemIndex)
+	
 	Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareDetail', item).getView());
 	
 	

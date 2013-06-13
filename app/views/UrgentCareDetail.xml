@@ -1,6 +1,6 @@
 <Alloy>
-	<Window class="container">
-	<View  top="20">
+	
+	<View  top="20" class="container">
 		<View top="30" layout="horizontal" height="22">
 		<Label left="2%" width="60%" id="UrgentCareText"/>
 		<ImageView  id="FavInDetailImage" image="/images/smallHeart.png" left="10" />
@@ -32,5 +32,5 @@
 		
 	</TableView>
 	</View>
-	</Window>
+	
 </Alloy>
