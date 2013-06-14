@@ -4,7 +4,7 @@
 			<Toolbar platform="ios" title="Map">
 				<Items>
 					<Button id="btnback" onClick="goToDashboard">Back</Button>
-					<Button onClick="searchPlaceInMap">Search</Button>
+					
 				</Items>
 			</Toolbar>
 			<View id="mapview" ns="Ti.Map"

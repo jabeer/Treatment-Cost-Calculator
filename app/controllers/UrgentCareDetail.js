@@ -6,7 +6,7 @@ $.UrgentCareAddress.setText(args.street.text);
 $.UrgentCarePhone.setText(args.phone.text);
 
 function showMap() {
-	Alloy.createController('MapView').getView().open();
+	Alloy.createController('MapView',args).getView().open();
 }
 
 function authorizeAndAddContacts() {

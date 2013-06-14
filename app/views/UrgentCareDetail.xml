@@ -1,7 +1,7 @@
 <Alloy>
 	
 
-	<View  top="20"class="container">
+	<View class="container">
 
 		<View top="30"  height="22">
 		<Label   left="2%" width="68%" id="UrgentCareText"/>
