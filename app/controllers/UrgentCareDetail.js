@@ -1,3 +1,4 @@
+
 var args = arguments[0] || 0;
 
 $.UrgentCareText.setText(args.centre.text);
@@ -38,4 +39,24 @@ function addToContacts() {
 	Titanium.Contacts.save(contact);
 	alert('adding');
 
+}
+
+function doAddToFav(){
+	$.FavInDetailImage.visible=true;
+Alloy.createController('AddToFavoritesModal').getView().open();
+	
+}
+
+function doGoToInfo(e)
+{
+	if(e.index==0)
+	Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareGridView').getView());
+	if(e.index==1)
+	alert("1");
+	//Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareGridView').getView());
+	if(e.index==2)
+	alert("2");
+	//Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareGridView').getView());
+	
+	
 }

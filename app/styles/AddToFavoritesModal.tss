@@ -1,0 +1,40 @@
+
+".modalInnerView":{
+   backgroundColor:"white",
+   height:"90%",
+   width:"90%",
+   top:"5%",
+   left:"5%",
+   borderColor:"black",
+   borderWidth:"1",
+   borderRadius:"4"
+}
+".aboutViewHeader[platform=android]":{
+   backgroundColor:"black",
+   height:"40"
+}
+".closeIcon[platform=android]":{ 
+	right:15,
+	height:30,
+	width:30
+},
+
+".androidTextArea[platform=android]":{
+borderColor:"white",
+width:"250",
+font:{
+fontSize:"12dp"}
+},
+".infoText[platform=android]":
+{
+height:"100"
+}
+".androidTextArea[platform=ios]":
+{
+borderColor:"white",
+width:"200"
+},
+".infoText[platform=ios]":
+{
+height:"80"
+}

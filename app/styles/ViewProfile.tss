@@ -1,6 +1,6 @@
 ".container": {
 	backgroundColor: "#BDBDBD"
-},
+}
 ".formCls":{
 borderRadius:"3px",
 borderColor:"white",
@@ -10,35 +10,75 @@ width:"90%" ,
 left:"5%" ,
 backgroundColor:"white"
 
-},
-".form2Cls":{
+}
+".form2Cls[platform:android]":{
+borderRadius:"3px",
+borderColor:"white",
+borderColor:"white",
+width:"90%",
+left:"5%",
+backgroundColor:"white"
+}
+".form2Cls[platform:ios]":{
 borderRadius:"3px",
 borderColor:"white",
 borderWidth:"1px",
-height:"40" ,
-width:"90%" ,
+height:"40",
+width:"90%",
 left:"5%" ,
 backgroundColor:"white"
 
-},
+}
 ".rightLbl":{
 right:"0",
 color:"#A4A4A4",
 font:{
 fontSize:14
-}
 },
+color:"black"
+}
 ".leftLbl":{
 left:"10",
 font:{
 fontSize:14,
 fontWeight:'bold'
-}
 },
-"#profileAdd":{
+color:"black"
+}
+"#profileAdd[platform=ios]":{
 left:"15",
 top:"10",
  color:"#343434",
   font:{fontSize:12}
 
+}
+"#profileAdd[platform=android]":{
+left:"18",
+top:"10",
+ color:"#343434",
+  font:{fontSize:12}
+
+}
+".androidTextArea[platform=android]":{
+borderColor:"white",
+font:{
+fontSize:14,
+fontWeight:'normal'
+},
+color:"black",
+width:"300",
+top:"1",
+height:"90",
+left:0
+}
+"#firstTextArea[platform=android]":{
+height:"70",
+width:"330",
+borderColor:"white",
+font:{
+fontSize:14,
+fontWeight:'normal',
+fontStyle:"italic"
+},
+color:"black"
 }

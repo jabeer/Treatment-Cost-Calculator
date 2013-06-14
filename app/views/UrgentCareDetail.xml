@@ -1,31 +1,36 @@
 <Alloy>
 	
-	<View  top="20" class="container">
-		<View top="30" layout="horizontal" height="22">
-		<Label left="2%" width="60%" id="UrgentCareText"/>
-		<ImageView  id="FavInDetailImage" image="/images/smallHeart.png" left="10" />
-		<Label  text="5.15 mi"  color="gray" left="10"/>
+
+	<View  top="20"class="container">
+
+		<View top="30"  height="22">
+		<Label   left="2%" width="68%" id="UrgentCareText"/>
+		<ImageView  id="FavInDetailImage" image="/images/smallHeart.png" right="25%" visible="false" />
+		
+		<Label   color="gray" right="2%"/>
+
 	</View>
 	<Label  top= "54"  left="2%" id="UrgentCareAddress"/>
-	<Label top= "75" id="UrgentCarePhone" color="red" left="2%" />
-	<View top="90"  height="15">
-	<ImageView  image="images/map.png"  left="70%" onClick="showMap"/>
-	<Label  text="Map" left="76%" color="gray" onClick="showMap"/>
+	<Label top= "77" id="UrgentCarePhone"  color="red" left="2%" />
+	<View top="90"  height="22">
+	<ImageView  image="/images/map.png"  right="86" onClick="showMap"/>
+	<Label  text="Map" right="52" color="gray" onClick="showMap"/>
 	</View>
-    <View top="160"  height="45">
-	<Button  image="images/openbook.png" height="40" left="5" width="45%" color="#545454" onClick="authorizeAndAddContacts">Add to Contacts</Button>
-	<Button right="5" image="images/smallFav.png"  height="40" width="45%" color="#3545454">Add to Favorites</Button>
+    <View top="140"  height="60">
+	<Button  image="/images/openbook.png" height="50" left="5" width="45%" color="#545454" onClick="authorizeAndAddContacts" title="Add to Contacts"></Button>
+	<Button   image="/images/smallFav.png" height="50"  right="5" width="45%" color="#545454"  onClick="doAddToFav" title="Add to Favorites"></Button>
+
 	</View> 
 	
-	<TableView bottom="0"  height="130">
+	<TableView  class="staticList">
 		<TableViewSection>
-		 <TableViewRow hasChild="true" color="#545454" id="row1" title="Why use Urgent Care" >
+		 <TableViewRow hasChild="true" color="#545454" id="row1" onClick="doGoToInfo" title="Why use Urgent Care"  >
         
     </TableViewRow>
-		<TableViewRow hasChild="true" id="row2" color="#545454" title="When to use Urgent Care">
+		<TableViewRow hasChild="true" id="row2" onClick="doGoToInfo" color="#545454" title="When to use Urgent Care">
    
     </TableViewRow>
-    <TableViewRow hasChild="true" id="row3" color="#545454" title="When to go to the Hospital">
+    <TableViewRow hasChild="true" id="row3" onClick="doGoToInfo" color="#545454" title="When to go to the Hospital">
        
     </TableViewRow>
 		</TableViewSection>
