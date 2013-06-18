@@ -1,11 +1,12 @@
 <Alloy>
-	<View class="container">
+	
+			<View class="container">
 		
 		<DashboardView platform="ios" left="5%" id="dashboardView">
 			<DashboardItem image="/images/plus.png" label="Urgent Care " onClick="showUrgentCare"/>
 			<DashboardItem image="/images/urgent_care.png"   label="Cost Calculator"  />
 			<DashboardItem image="/images//urgent_care.png"  label="Physician Finder"/>
-			<DashboardItem image="/images/Insurance.png"    label="Insurance" onClick="showMap" />
+			<DashboardItem image="/images/Insurance.png"    label="Insurance"  />
 			
 		</DashboardView>
 		
@@ -36,4 +37,7 @@
 		</View>
 			
 	</View>
+		
+	
+	
 </Alloy>

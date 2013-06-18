@@ -1,7 +1,7 @@
 <Alloy>
 	 <TabGroup backgroundColor="white" >
             <Tab id="tabHome" title="Home" icon="images/house.png">
-                <Window id="winHome" title="Dashboard" >
+                <Window id="winHome"  >
                   <Require src="Dashboard"></Require>
                 </Window>
             </Tab>

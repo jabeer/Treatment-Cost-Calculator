@@ -120,7 +120,7 @@ searchSection.setItems([
    
     title: { text: 'Profiles' },
      infoText: { text: 'Family Memebers' },
-       rightText: { text: 'chuck' },
+     rightText: { text: 'chuck' },
   
   },
   {
@@ -154,6 +154,20 @@ searchSection.setItems([
   }
 ]);
 searchListView.sections = [searchSection];
+
+
+
+searchListView.addEventListener('itemclick', function(e){
+	
+	var item = e.section.getItemAt(e.itemIndex);
+	if(item.title.text=='Profiles')
+	{
+		
+		Alloy.Globals.winSettings.add(Alloy.createController('ProfileList').getView());
+	}
+	
+});
+
 
 $.settingsView.add(searchListView);
 

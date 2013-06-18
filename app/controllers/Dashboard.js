@@ -21,5 +21,8 @@ function showMap()
 
 function showUrgentCare()
 {
+	
+	//var win3 = Alloy.createController('UrgentCareList').getView();
+   // Alloy.Globals.navBar.open(win3, {animated : true});
 	Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareList').getView());
 }
