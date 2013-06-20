@@ -1,0 +1,15 @@
+".container": {
+	backgroundColor: "white"
+}
+".fauouriteUCCRowLabel":{
+  
+  left:10,
+  top:10
+}
+".fauouriteUCCLabel":{
+
+
+}
+".redDeleteIcon":{
+//backgroundImage:'/images/minus.png'
+}
