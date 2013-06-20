@@ -1,6 +1,8 @@
 <Alloy>
-	
-			<View class="container">
+
+	<Window id="dashboard" title="Dashboard" >
+	<View class="container">
+
 		
 		<DashboardView platform="ios" left="5%" id="dashboardView">
 			<DashboardItem image="/images/plus.png" label="Urgent Care " onClick="showUrgentCare"/>
@@ -37,7 +39,7 @@
 		</View>
 			
 	</View>
-		
-	
-	
+
+	</Window>
+
 </Alloy>

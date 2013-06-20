@@ -1,24 +1,23 @@
 <Alloy>
-	 <TabGroup backgroundColor="white" >
+	 <TabGroup id="tabGrp" backgroundColor="white" >
             <Tab id="tabHome" title="Home" icon="images/house.png">
-                <Window id="winHome"  >
+
                   <Require src="Dashboard"></Require>
-                </Window>
+              
             </Tab>
             <Tab id="tabSearch" title="Search" icon="images/magnify.png">
-                <Window id="winSearch" title="Search">
+              
                      <Require src="Search"></Require>
-                </Window>
+               
             </Tab>
             <Tab id="tabFav" title="Favorites" icon="images/heart.png">
-                <Window id="winFav" title="Favorites">
+                
                    <Require src="FavoritesList"></Require>
-                </Window>
-            </Tab> 
+                           </Tab> 
             <Tab id="tabSettings" title="Settings" icon="images/gear.png">
-                <Window id="winSettings" title="Settings">
+               
                     <Require src="Settings"></Require>
-                </Window>
+               
             </Tab>
         </TabGroup> 
 	 

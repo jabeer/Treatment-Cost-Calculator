@@ -10,3 +10,50 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+
+Alloy.Collections.favouritesUCC =  Alloy.Collections.instance('FavouritesUCC') ;
+
+Alloy.Globals.getFavouritesUCCData = function() {
+
+	favouritesUCC_Data = [
+	 		{
+	 	        "center_name": "Urgent Care of Polymouth ",
+	            "center_address": "10 main Street of Polymouth",
+	            "center_phone":"(555) 555-8121",
+	       },
+	       {
+	 	        "center_name": "First Urgent Care  ",
+	            "center_address": "10 main Street of Polymouth",
+	            "center_phone":"(555) 555-2121",
+	       },
+	       {
+	 	        "center_name": "Urgent Care Centers ",
+	            "center_address": "10 main Street of Polymouth",
+	            "center_phone":"(555) 555-9931",
+	       },
+	       {
+	 	        "center_name": "Urgent Care of Polymouth ",
+	            "center_address": "10 main Street of Polymouth",
+	            "center_phone":"(555) 555-8121",
+	       },
+	       {
+	 	        "center_name": "First Urgent Care  ",
+	            "center_address": "10 main Street of Polymouth",
+	            "center_phone":"(555) 555-2121",
+	       },
+	       {
+	 	        "center_name": "Urgent Care Centers ",
+	            "center_address": "10 main Street of Polymouth",
+	            "center_phone":"(555) 555-9931",
+	        }
+	
+	
+	   ];
+	
+	return favouritesUCC_Data
+	
+}
+
+Alloy.Collections.favouritesUCC.add(Alloy.Globals.getFavouritesUCCData());
+console.log(Alloy.Collections.favouritesUCC.models.length);
+

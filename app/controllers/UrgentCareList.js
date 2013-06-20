@@ -1,3 +1,23 @@
+/*
+ * name:onWhyUseCareBtn
+ * purpose:to show why use urgent care view on button click
+ */
+function onWhyUseCareBtn(e)
+{
+	
+	Alloy.Globals.UrgentCareGridView=Alloy.createController('UrgentCareGridView').getView();
+	if(OS_ANDROID)
+	Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareGridView);	
+	if(OS_IOS)
+	Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareGridView,{animated:true});	
+	
+}
+
+
+
+/*
+ * To create list with templates
+ */
 var lstUrgentCareCentres = {
     childTemplates: [
         {                            // Image justified left
@@ -93,10 +113,29 @@ listView.setSections(sections);
 
 listView.addEventListener('itemclick', function(e)
 {
+	console.log(e);
 	var item = e.section.getItemAt(e.itemIndex)
+
+	Alloy.Globals.UrgentCareDetail=Alloy.createController('UrgentCareDetail',item).getView();
+	if(Alloy.Globals.searchTap)
+	{
+		if(OS_ANDROID)
+		Alloy.Globals.tabSearch.open(Alloy.Globals.UrgentCareDetail);	
+		
+		if(OS_IOS)
+Alloy.Globals.tabSearch.open(Alloy.Globals.UrgentCareDetail,{animated:true});	
+
+			}
+	else{
+		if(OS_ANDROID)
+		Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareDetail);	
 	
-	Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareDetail', item).getView());
-	
+		if(OS_IOS)
+Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareDetail,{animated:true});	
+
+		
+	}
+
 	
 });
 $.viewUrgentCare.add(listView);
