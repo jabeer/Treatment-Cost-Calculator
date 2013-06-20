@@ -119,7 +119,7 @@ searchSection.setItems([
     template: 'template',
    
     title: { text: 'Profiles' },
-     infoText: { text: 'Family Memebers' },
+     infoText: { text: 'Family Members' },
      rightText: { text: 'chuck' },
   
   },
@@ -157,13 +157,26 @@ searchListView.sections = [searchSection];
 
 
 
+
+
+
+
+
 searchListView.addEventListener('itemclick', function(e){
 	
 	var item = e.section.getItemAt(e.itemIndex);
 	if(item.title.text=='Profiles')
 	{
+		if(OS_ANDROID)
+		{Alloy.Globals.tabSettings.open(Alloy.createController('ProfileList').getView());}
+
+
+		if(OS_IOS)	
+		{	
+			Alloy.Globals.tabSettings.open(Alloy.createController('ProfileList').getView(),{animated:true});}
+
 		
-		Alloy.Globals.winSettings.add(Alloy.createController('ProfileList').getView());
+	//	Alloy.Globals.tabSettings.add(Alloy.createController('ProfileList').getView());
 	}
 	
 });

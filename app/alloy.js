@@ -12,6 +12,7 @@
 
 
 Alloy.Collections.favouritesUCC =  Alloy.Collections.instance('FavouritesUCC') ;
+Alloy.Collections.ProfileModel =  Alloy.Collections.instance('ProfileModel') ;
 
 Alloy.Globals.getFavouritesUCCData = function() {
 
@@ -54,6 +55,59 @@ Alloy.Globals.getFavouritesUCCData = function() {
 	
 }
 
+
+
+Alloy.Globals.getProfileData = function() {
+
+	profile_Data = [
+	 		{
+	 	        "FirstName": "Chuck",
+	            "LastName": "Smith",
+	            "Gender":"M",
+	            "Age":"45",
+	            "Email":"chuck@gmail.com",
+	            "Address":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            "SchoolAddress":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            
+	            
+	       },
+	       {
+	 	        "FirstName": "Mary",
+	            "LastName": "Smith",
+	            "Gender":"F",
+	            "Age":"42",
+	            "Email":"mary@gmail.com",
+	            "Address":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            "SchoolAddress":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            
+	       },
+	       {
+	 	        "FirstName": "Kevin",
+	            "LastName": "Smith",
+	            "Gender":"M",
+	            "Age":"18",
+	            "Email":"kevin@gmail.com",
+	            "Address":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            "SchoolAddress":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            
+	       },
+	      
+	
+	   ];
+	
+	return profile_Data
+	
+}
+
+
+
+
+
+
+
+
 Alloy.Collections.favouritesUCC.add(Alloy.Globals.getFavouritesUCCData());
+Alloy.Collections.ProfileModel.add(Alloy.Globals.getProfileData());
 console.log(Alloy.Collections.favouritesUCC.models.length);
+
 

@@ -1,5 +1,5 @@
 <Alloy>
-	
+	<Window title="View Profile">
 		<ScrollView >
 		<View  layout="vertical" class="container">
 			
@@ -46,5 +46,5 @@
 		
 		</View>
 		</ScrollView>
-		
+	</Window>	
 	</Alloy>

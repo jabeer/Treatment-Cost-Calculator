@@ -1,5 +1,7 @@
 <Alloy>
+	<Window title="Profiles">
 	<View class="container" id="viewProfiles" layout="vertical">
 	
 	</View>
+	</Window>
 </Alloy>

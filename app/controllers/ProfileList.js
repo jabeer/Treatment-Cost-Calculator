@@ -94,8 +94,15 @@ $.viewProfiles.add(btnAddProfile);
 listView.addEventListener('itemclick', function(e)
 {
 	
+	if(OS_ANDROID)
+		{Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile').getView());}
+
+
+		if(OS_IOS)	
+		{	alert(Alloy.Globals.ProfileList);
+			Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile').getView(),{animated:true});}
+
 	
-	Alloy.Globals.winSettings.add(Alloy.createController('ViewProfile').getView());
 	
 	
 });
