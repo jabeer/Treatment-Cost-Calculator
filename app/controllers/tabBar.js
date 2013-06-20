@@ -1,3 +1,4 @@
+
 // Alloy.Globals.mainWin = $.winHome;
 // 
 // Alloy.Globals.winSearch = $.winSearch;
@@ -8,7 +9,6 @@ Alloy.Globals.tabHome=$.tabHome;
 Alloy.Globals.tabSearch=$.tabSearch;
 Alloy.Globals.tabFav=$.tabFav;
 Alloy.Globals.tabSettings=$.tabSettings;
-    	
 
 // if((Titanium.UI.currentTab==$.tabHome)||(Titanium.UI.currentTab==$.tabFav))
 // {
@@ -19,4 +19,5 @@ Alloy.Globals.tabSettings=$.tabSettings;
 // {
 // Alloy.Globals.favTap=false;	
 // }
+
 

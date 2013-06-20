@@ -116,9 +116,6 @@ listView.addEventListener('itemclick', function(e)
 	console.log(e);
 	var item = e.section.getItemAt(e.itemIndex)
 
-	
-	//Alloy.Globals.mainWin.add(Alloy.createController('UrgentCareDetail', item).getView());
-
 	Alloy.Globals.UrgentCareDetail=Alloy.createController('UrgentCareDetail',item).getView();
 	if(Alloy.Globals.searchTap)
 	{
@@ -132,7 +129,6 @@ Alloy.Globals.tabSearch.open(Alloy.Globals.UrgentCareDetail,{animated:true});
 	else{
 		if(OS_ANDROID)
 		Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareDetail);	
-
 	
 		if(OS_IOS)
 Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareDetail,{animated:true});	

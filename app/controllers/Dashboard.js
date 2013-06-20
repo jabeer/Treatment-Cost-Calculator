@@ -21,6 +21,7 @@ function showMap()
 
 function showUrgentCare()
 {
+
 	
 	// //var win3 = Alloy.createController('UrgentCareList').getView();
    // // Alloy.Globals.navBar.open(win3, {animated : true});
@@ -38,6 +39,5 @@ if(OS_ANDROID){
 }
 if(OS_IOS)	
 Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareList,{animated:true});
-
 
 }
