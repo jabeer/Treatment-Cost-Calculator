@@ -91,4 +91,11 @@ $.viewProfiles.add(btnAddProfile);
 
 
 
-
+listView.addEventListener('itemclick', function(e)
+{
+	
+	
+	Alloy.Globals.winSettings.add(Alloy.createController('ViewProfile').getView());
+	
+	
+});
