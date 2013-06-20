@@ -1,7 +1,5 @@
 <Alloy>
-<Window>
-		<View id="searchView" class="container">
-
-		</View>
+	<Window>
+		<View id="searchView" class="container"></View>
 	</Window>
 </Alloy>

@@ -1,5 +1,7 @@
 <Alloy>
 <Window>
-		<View id="settingsView" class="container"></View>
+		<View id="settingsView" class="container">
+			
+		</View>
 	</Window>
 </Alloy>

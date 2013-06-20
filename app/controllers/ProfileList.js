@@ -99,7 +99,7 @@ listView.addEventListener('itemclick', function(e)
 
 
 		if(OS_IOS)	
-		{	alert(Alloy.Globals.ProfileList);
+		{	
 			Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile').getView(),{animated:true});}
 
 	

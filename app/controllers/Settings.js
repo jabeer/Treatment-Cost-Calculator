@@ -156,12 +156,6 @@ searchSection.setItems([
 searchListView.sections = [searchSection];
 
 
-
-
-
-
-
-
 searchListView.addEventListener('itemclick', function(e){
 	
 	var item = e.section.getItemAt(e.itemIndex);

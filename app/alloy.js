@@ -102,10 +102,6 @@ Alloy.Globals.getProfileData = function() {
 
 
 
-
-
-
-
 Alloy.Collections.favouritesUCC.add(Alloy.Globals.getFavouritesUCCData());
 Alloy.Collections.ProfileModel.add(Alloy.Globals.getProfileData());
 console.log(Alloy.Collections.favouritesUCC.models.length);
