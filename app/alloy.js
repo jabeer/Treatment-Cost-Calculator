@@ -10,6 +10,7 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+
 Alloy.Collections.favouritesUCC =  Alloy.Collections.instance('FavouritesUCC') ;
 
 Alloy.Globals.getFavouritesUCCData = function() {
@@ -55,5 +56,4 @@ Alloy.Globals.getFavouritesUCCData = function() {
 
 Alloy.Collections.favouritesUCC.add(Alloy.Globals.getFavouritesUCCData());
 console.log(Alloy.Collections.favouritesUCC.models.length);
-
 
