@@ -1,13 +1,14 @@
 <Alloy>
-	
 
-	<View class="container">
+	<Window title="Urgent Care Detail" backgroundColor="white">
+	<View  top="20" backgroundColor="white">
+
 
 		<View top="30"  height="22">
 		<Label   left="2%" width="68%" id="UrgentCareText"/>
 		<ImageView  id="FavInDetailImage" image="/images/smallHeart.png" right="25%" visible="false" />
 		
-		<Label   color="gray" right="2%"/>
+		<Label  id="UrgentCareDistance" color="gray" right="2%"/>
 
 	</View>
 	<Label  top= "54"  left="2%" id="UrgentCareAddress"/>
@@ -37,5 +38,5 @@
 		
 	</TableView>
 	</View>
-	
+	</Window>
 </Alloy>
