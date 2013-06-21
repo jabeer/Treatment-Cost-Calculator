@@ -21,31 +21,38 @@ Alloy.Globals.getFavouritesUCCData = function() {
 	 	        "center_name": "Urgent Care of Polymouth ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-8121",
+	            "ifFav" : "Yes"
 	       },
 	       {
 	 	        "center_name": "First Urgent Care  ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-2121",
+	            "ifFav" : "Yes"
 	       },
 	       {
 	 	        "center_name": "Urgent Care Centers ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-9931",
+	            "ifFav" : "No"
 	       },
 	       {
 	 	        "center_name": "Urgent Care of Polymouth ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-8121",
+	              "ifFav" : "No"
+	            
 	       },
 	       {
 	 	        "center_name": "First Urgent Care  ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-2121",
+	              "ifFav" : "No"
 	       },
 	       {
 	 	        "center_name": "Urgent Care Centers ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-9931",
+	             "ifFav" : "Yes"
 	        }
 	
 	
