@@ -1,3 +1,7 @@
 <Alloy>
-	<View id="gridViewWin" class="container"></View>
+	<Window    title="Urgent Care" backgroundColor="#ededed">
+		<Label text="Urgent Care can save you money!" top="10" textAlign="center" color="black"/>
+	
+	<View id="gridViewWin" class="container" top="50" left="2%" width="96%" borderRadius="6px"></View> 	
+</Window>
 </Alloy>

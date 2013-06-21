@@ -1,5 +1,8 @@
+var args=arguments[0] || 0;
 function doGoToFav(){
 		$.AddToFav.close();
+		Alloy.Globals.tabGrp.setActiveTab(Alloy.Globals.tabFav);
+	
 }
 function doCloseModal()
 {
@@ -7,7 +10,16 @@ function doCloseModal()
 	$.AddToFav.close();
 }
 function doUndo(){
-	
+	if(args.newFavorite=="Yes")
+{
+Alloy.Collections.favouritesUCC.models[args.favorite.index].set({'ifFav':'No'});
+Alloy.Collections.favouritesUCC.trigger('change');
+}
+if(args.newFavorite=="No")
+{
+Alloy.Collections.favouritesUCC.models[args.favorite.index].set({'ifFav':'Yes'});
+Alloy.Collections.favouritesUCC.trigger('change');
+}
 	$.AddToFav.close();	
 }
 var closeButton=Ti.UI.createButton({

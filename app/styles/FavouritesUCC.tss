@@ -1,15 +1,26 @@
 ".container": {
 	backgroundColor: "white"
 }
-".fauouriteUCCRowLabel":{
-  
-  left:10,
-  top:10
-}
 ".fauouriteUCCLabel":{
 
 
 }
 ".redDeleteIcon":{
 //backgroundImage:'/images/minus.png'
+}
+".fauouriteUCCCenter":{
+left:10,
+  top:10,
+  font: { fontFamily:'Arial', fontSize: '15dp',fontWeight:'bold' }
+}
+".fauouriteUCCAddress":{
+left:10,
+  top:10,
+  font: { fontFamily:'Arial', fontSize: '13dp' }
+}
+".fauouriteUCCPhone":{
+left:10,
+  top:10,
+  color: '#00A500',
+   font: { fontFamily:'Arial', fontSize: '13dp' }
 }

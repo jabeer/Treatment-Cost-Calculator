@@ -103,7 +103,7 @@ fruitSection.setItems(fruitDataSet);
 
 listView.sections = [fruitSection];
 listView.addEventListener("itemclick",function(e){
-	
+		Alloy.Globals.favTap=true;	
 	var item=fruitSection.getItemAt(e.itemIndex);
 		
 	if (item.es_info.text == "0") {
@@ -112,7 +112,17 @@ listView.addEventListener("itemclick",function(e){
         alert("No data");
     }
     else{
-    	alert( item.es_info.text+" "+"number of data");
+    	if (item.info.text == "Urgent Care Centers") 
+{
+//Alloy.Globals.tabFav.close(Alloy.Globals.winFav);
+Alloy.Globals.FavouritesUCC=Alloy.createController('FavouritesUCC').getView();
+	if(OS_ANDROID)
+		Alloy.Globals.tabFav.open(Alloy.Globals.FavouritesUCC);
+		if(OS_IOS)
+Alloy.Globals.tabFav.open(Alloy.Globals.FavouritesUCC,{animated:true});
+    	}
+    
+    	
     }
     
    

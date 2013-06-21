@@ -20,7 +20,7 @@
 	</View>
     <View top="140"  height="60">
 	<Button  image="/images/openbook.png" height="50" left="5" width="45%" color="#545454" onClick="authorizeAndAddContacts" title="Add to Contacts"></Button>
-	<Button   image="/images/smallFav.png" height="50"  right="5" width="45%" color="#545454"  onClick="doAddToFav" title="Add to Favorites"></Button>
+	<Button  id="addToFavBtn"  height="50"  right="5" width="45%" color="#545454"  onClick="doAddToFav" ></Button>
 
 	</View> 
 	

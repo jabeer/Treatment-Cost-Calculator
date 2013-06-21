@@ -76,13 +76,30 @@ var theTable = Titanium.UI.createTableView({
 	 borderRadius:'6px',
 	 borderColor:'black',
 	 borderWidth: '3px',
-	 height: '214px',
-	 data:rdata
+	  data:rdata,
+	 height: Ti.UI.SIZE,
+	 	  footerTitle:''
 });
 if(Ti.Platform.osname=="android")
 {
-	theTable.height="305";
+	//theTable.height="305";
 	theTable.top='10%';
 }
 
 $.searchView.add(theTable);
+
+theTable.addEventListener('click',function(e){
+	if(e.index==0){
+Alloy.Globals.searchTap=true;
+//Alloy.Globals.tabSearch.close(Alloy.Globals.winSearch);
+Alloy.Globals.UrgentCareList=Alloy.createController('UrgentCareList').getView();
+if(OS_ANDROID)
+		Alloy.Globals.tabSearch.open(Alloy.Globals.UrgentCareList);
+if(OS_IOS)		
+Alloy.Globals.tabSearch.open(Alloy.Globals.UrgentCareList,{animated:true});
+    	
+          }
+          else{
+          	alert("No Data");
+                    }
+});

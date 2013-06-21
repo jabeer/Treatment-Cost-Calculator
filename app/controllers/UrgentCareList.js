@@ -1,3 +1,4 @@
+
 /*
  * name:onWhyUseCareBtn
  * purpose:to show why use urgent care view on button click
@@ -13,7 +14,7 @@ function onWhyUseCareBtn(e)
 	
 }
 
-
+var ucModelData=Alloy.Collections.favouritesUCC.toJSON();
 
 /*
  * To create list with templates
@@ -62,8 +63,7 @@ var lstUrgentCareCentres = {
             type: 'Ti.UI.ImageView',     // Use a label for the subtitle
             bindId: 'favorite',       // Maps to a custom es_info property of the item data
             properties: {            // Sets the label properties
-             
-                right: '50dp', top: 0,
+                             right: '50dp', top: 0,
             }
         }
     ],
@@ -91,16 +91,18 @@ var listView = Ti.UI.createListView({
 var sections = [];
 
 var ucSection = Ti.UI.createListSection({});
-var ucDataSet = [
-    // the text property of info maps to the text property of the title label
-    // the text property of es_info maps to text property of the subtitle label
-    // the image property of pic maps to the image property of the image view
-    { centre: {text: 'Urgent Care of Plymouth'}, street: {text: '10 Main Street, Plymouth'}, phone: {text: '(508) 555-1213'}, distance:{text: '5.5mi'} },
-    { centre: {text: 'First Choice of Urgent Care'}, street: {text: '405, Ford Rd Canton'}, phone: {text: '(508) 555-1276'}, distance:{text: '7.2mi'}, favorite:{image:'/images/smallHeart.png'}},
-    { centre: {text: 'Urgent Care Centres'}, street: {text: 'Manapakkam, Ramapuram'}, phone: {text: '(508) 555-9876'}, distance:{text: '11mi'} },
-    { centre: {text: 'Emergency & Urgent Care'}, street: {text: 'Alkatraz'}, phone: {text: '(508) 555-1476'}, distance:{text: '11.2mi'}, favorite:{image:'/images/smallHeart.png'}}
+var ucDataSet = [];
 
-];
+for(var i=0; i<ucModelData.length;i++){
+	console.log(ucModelData[i].center_name);
+	if(ucModelData[i].ifFav=="Yes")
+ucDataSet.push({centre: {text:ucModelData[i].center_name},street: {text:ucModelData[i].center_address}, phone: {text:ucModelData[i].center_phone}, distance:{text:ucModelData[i].center_distance},favorite:{image:'/images/smallHeart.png',text:'Yes',index:i}});	
+	if(ucModelData[i].ifFav=="No")
+	{
+		ucDataSet.push({centre: {text:ucModelData[i].center_name},street: {text:ucModelData[i].center_address}, phone: {text:ucModelData[i].center_phone}, distance:{text:ucModelData[i].center_distance},favorite:{text:'No',index:i}});	
+
+	}
+}
 ucSection.setItems(ucDataSet);
 sections.push(ucSection);
 
@@ -140,3 +142,4 @@ Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareDetail,{animated:true});
 	
 });
 $.viewUrgentCare.add(listView);
+

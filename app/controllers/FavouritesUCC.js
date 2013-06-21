@@ -1,3 +1,23 @@
+var fArray=[],tableIndex=0;
+function showFavOnly(collection){
+FavArray=collection.toJSON();
+
+for(i=0;i<FavArray.length;i++){
+
+	if(FavArray[i].ifFav=="Yes"){
+
+	fArray[tableIndex]=i;
+	tableIndex++;
+}
+}
+
+	  return collection.where({ifFav:'Yes'});
+}
+function onRightDelete(e) {
+
+Alloy.Collections.favouritesUCC.models[fArray[e.index]].set({'ifFav':'No'});
+
+}
 // var v =$.favouritesUCCList
 // alert(v.getChildren().length);
 

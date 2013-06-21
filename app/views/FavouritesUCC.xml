@@ -3,17 +3,18 @@
 		<View layout="vertical">
 			<View height="30"><Label id="fauouriteUCCLabel"></Label></View>
 			<Button onClick="changeMode" id="changeModeBtn"  title="Edit"></Button>	
-			<TableView dataCollection="favouritesUCC"  id="favouritesUCCList"  >
-				<TableViewRow  hasChild="true"  height="80" platform="ios">				
-					<Label class="fauouriteUCCRowLabel" text="{center_name}" top="10"></Label>
-					<Label class="fauouriteUCCRowLabel" text="{center_address}" top="30"></Label>
-					<Label class="fauouriteUCCRowLabel" text="{center_phone}" top="50"></Label>				
+			<TableView dataCollection="favouritesUCC"  id="favouritesUCCList" dataFilter="showFavOnly" editable="true" onDelete="onRightDelete">
+				<TableViewRow  hasChild="true"  height="80" platform="ios" >				
+					<Label class="fauouriteUCCCenter" text="{center_name}" top="10"></Label>
+					<Label class="fauouriteUCCAddress" text="{center_address}" top="30"></Label>
+					<Label class="fauouriteUCCPhone" text="{center_phone}" top="50"></Label>	
+					
 				</TableViewRow> 
 				
-				<TableViewRow   height="80"   onClick="deleteRow" platform="android">				
-					<Label class="fauouriteUCCRowLabel" text="{center_name}" top="10"></Label>
-					<Label class="fauouriteUCCRowLabel" text="{center_address}" top="30"></Label>
-					<Label class="fauouriteUCCRowLabel" text="{center_phone}" top="50"></Label>
+				<TableViewRow   height="80"   onClick="deleteRow" platform="android" dataFilter="showFavOnly">				
+					<Label class="fauouriteUCCCenter" text="{center_name}" top="10"></Label>
+					<Label class="fauouriteUCCAddress" text="{center_address}" top="30"></Label>
+					<Label class="fauouriteUCCPhone" text="{center_phone}" top="50"></Label>
 					<ImageView class="redDeleteIcon"  visible="{deleteFlag}"   image="/images/minus.png"  height="30" width="30" title="b1" right="15" top="30"></ImageView>
 					<ImageView class="redDeleteIcon"  visible="{childFlag}"   image="/images/rightArrow.png"  height="30" width="30" title="b1" right="15" top="30"></ImageView>		
 				</TableViewRow> 
