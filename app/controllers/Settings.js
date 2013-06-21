@@ -88,10 +88,10 @@ var listTemplate={
 };
 if(Ti.Platform.osname=="android")
 {
-	listTemplate.properties.height="70";
- listTemplate.childTemplates[2].properties.right = '28';
- listTemplate.childTemplates[2].properties.top = '10';
- listTemplate.childTemplates[2].properties.font={fontSize:'12dp'};
+listTemplate.properties.height="70";
+listTemplate.childTemplates[2].properties.right = '28';
+listTemplate.childTemplates[2].properties.top = '10';
+listTemplate.childTemplates[2].properties.font={fontSize:'12dp'};
 listTemplate.childTemplates[1].properties.font={fontSize:'14dp'};
 listTemplate.childTemplates[1].properties.top = '35';
 listTemplate.childTemplates[0].properties.font={fontSize:'14dp'};

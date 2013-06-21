@@ -68,6 +68,7 @@ Alloy.Globals.getProfileData = function() {
 	            "Email":"chuck@gmail.com",
 	            "Address":"123 S.Main Sl,Aggg, 0030 New York,NY",
 	            "SchoolAddress":"123 S.Main Sl,Aggg, 0030 New York,NY",
+	            "active":"true"
 	            
 	            
 	       },
@@ -79,7 +80,7 @@ Alloy.Globals.getProfileData = function() {
 	            "Email":"mary@gmail.com",
 	            "Address":"123 S.Main Sl,Aggg, 0030 New York,NY",
 	            "SchoolAddress":"123 S.Main Sl,Aggg, 0030 New York,NY",
-	            
+	            "active":"false"
 	       },
 	       {
 	 	        "FirstName": "Kevin",
@@ -89,7 +90,7 @@ Alloy.Globals.getProfileData = function() {
 	            "Email":"kevin@gmail.com",
 	            "Address":"123 S.Main Sl,Aggg, 0030 New York,NY",
 	            "SchoolAddress":"123 S.Main Sl,Aggg, 0030 New York,NY",
-	            
+	            "active":"false"
 	       },
 	      
 	

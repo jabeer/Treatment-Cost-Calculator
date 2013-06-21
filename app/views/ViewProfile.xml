@@ -3,41 +3,41 @@
 		<ScrollView >
 			<View  layout="vertical" class="container">
 
-				<Label text="Chuck Smith" id="personName" top="20"  color="black"/>
+				<Label id="personName" top="20"  color="black"/>
 				<TextArea id="firstTextArea"
 
 				color="black" textAlign="center" value="This information is used to provide the most accurate cost estimates possible"
 				top="8"   editable="false" backgroundColor="#BDBDBD"/>
 				<View  class="formCls" >
 					<Label text="Full Name" class="leftLbl"/>
-					<Label text="Chuck Smith" class="rightLbl"/>
+					<Label id="fullName" class="rightLbl"/>
 				</View>
 				<View class="formCls">
 					<Label text="Gender"  class="leftLbl"/>
-					<Label text="Male" class="rightLbl"/>
+					<Label  id="gender" class="rightLbl"/>
 				</View>
 				<View class="formCls">
 					<Label text="Age"  class="leftLbl"/>
-					<Label text="23" class="rightLbl"/>
+					<Label id="age" class="rightLbl"/>
 				</View>
 				<View  class="formCls">
 					<Label text="Email"  class="leftLbl"/>
-					<Label text="chuck@email.com" class="rightLbl"/>
+					<Label  id="email" class="rightLbl"/>
 				</View>
 				<Label text="Profile Address" id="profileAdd"/>
 				<View class="form2Cls" layout="horizontal">
-					<Label text="Home Address"  top="12" class="leftLbl"/>
+					<Label  text="Home Address" id="address" top="12" class="leftLbl" />
 				</View>
 				<View  class="form2Cls" top="1">
 					<TextArea id="homeAddress" class="androidTextArea"
-					textAlign="left" value="123 S.Main Sl,Aggg, 0030 New York,NY"
+					textAlign="left" 
 					editable="false" backgroundColor="white" />
 				</View>
 				<View class="form2Cls" layout="horizontal" top="10">
 					<Label text="My Daughter's school Address" top="12" class="leftLbl"/>
 				</View>
 				<View  class="form2Cls" top="1">
-					<TextArea  id="daughterAddress" class="androidTextArea" textAlign="left" value="123 S.Main Sl,Aggg, 0030 New York,NY"
+					<TextArea  id="daughterAddress" class="androidTextArea" textAlign="left" 
 					editable="false" backgroundColor="white" />
 				</View>
 				<View class="form2Cls" top="10" layout="horizontal">

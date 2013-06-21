@@ -64,7 +64,7 @@ var sections = [];
 
 var profileSection = Ti.UI.createListSection({});
 
-var profileDataSet = [
+/*var profileDataSet = [
     // the text property of info maps to the text property of the title label
     // the text property of es_info maps to text property of the subtitle label
     // the image property of pic maps to the image property of the image view
@@ -72,7 +72,24 @@ var profileDataSet = [
     { name: {text: 'Mary'} },
     { name: {text: 'Kevin'} },
     
-];
+];*/
+//alert(profileDataSet);
+var profileDataSet =[], isActive;
+_.each(Alloy.Collections.ProfileModel.toJSON(), function(rec, stats)
+{ 
+	rec.active = (rec.active=="true") ? true : false;
+	isActive = rec.active ? 'Active' :''
+	
+	profileDataSet.push({name:{text :rec.FirstName},
+		 active :{text:isActive },
+		 FirstName:rec.FirstName,
+		 LastName:rec.LastName,
+		 Gender:rec.Gender,
+		 Age:rec.Age,
+		 Email:rec.Email,
+		 Address:rec.Address,
+		 SchoolAddress:rec.SchoolAddress});
+});
 
 
 profileSection.setItems(profileDataSet);
@@ -93,14 +110,16 @@ $.viewProfiles.add(btnAddProfile);
 
 listView.addEventListener('itemclick', function(e)
 {
+	var item = e.section.getItemAt(e.itemIndex);
+	
 	
 	if(OS_ANDROID)
-		{Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile').getView());}
+		{Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile', item).getView());}
 
 
 		if(OS_IOS)	
 		{	
-			Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile').getView(),{animated:true});}
+			Alloy.Globals.tabSettings.open(Alloy.createController('ViewProfile', item).getView(),{animated:true});}
 
 	
 	
