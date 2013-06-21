@@ -1,5 +1,7 @@
 <Alloy>
-<Window>
+
+<Window title="Favorties">
+
 	<View id="viewBadge"  backgroundColor="white">
 	</View>
 </Window>

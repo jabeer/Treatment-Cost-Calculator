@@ -105,7 +105,7 @@ borderRadius:"6px",
 borderWidth:"3px",
 borderColor:'black',
 top:"10%",
-height: "250"
+ height:"250"
 });
 
 if(Ti.Platform.osname=="android")
@@ -161,16 +161,13 @@ searchListView.addEventListener('itemclick', function(e){
 	var item = e.section.getItemAt(e.itemIndex);
 	if(item.title.text=='Profiles')
 	{
-		if(OS_ANDROID)
-		{Alloy.Globals.tabSettings.open(Alloy.createController('ProfileList').getView());}
 
+			Alloy.Globals.profileList=Alloy.createController('ProfileList').getView();
+			if(OS_ANDROID)
+		Alloy.Globals.tabSettings.open(Alloy.Globals.profileList);
+				if(OS_IOS)
+		Alloy.Globals.tabSettings.open(Alloy.Globals.profileList,{animated:true});
 
-		if(OS_IOS)	
-		{	
-			Alloy.Globals.tabSettings.open(Alloy.createController('ProfileList').getView(),{animated:true});}
-
-		
-	//	Alloy.Globals.tabSettings.add(Alloy.createController('ProfileList').getView());
 	}
 	
 });

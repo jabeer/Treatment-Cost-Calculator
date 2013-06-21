@@ -1,7 +1,7 @@
 <Alloy>
-<Window>
-		<View id="settingsView" class="container">
-			
-		</View>
+
+<Window title="Settings" class="container">
+		<View id="settingsView" ></View>
+
 	</Window>
 </Alloy>
