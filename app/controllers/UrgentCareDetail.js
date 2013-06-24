@@ -21,7 +21,17 @@ else if(args.favorite.text=="No")
      
 }
 function showMap() {
-	Alloy.createController('MapView',args).getView().open();
+	
+		if(OS_ANDROID)
+		{Alloy.Globals.tabHome.open(Alloy.createController('MapView', args).getView());}
+
+
+		if(OS_IOS)	
+		{	
+			Alloy.Globals.tabHome.open(Alloy.createController('MapView', args).getView(),{animated:true});}
+
+	
+	//Alloy.createController('MapView',args).getView().open();
 }
 
 function authorizeAndAddContacts() {

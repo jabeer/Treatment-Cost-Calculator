@@ -8,7 +8,7 @@ var args = arguments[0] || 0;
  * MethodName: goToDashboard
  * Description: Opens Dashboard View
  *  
- */
+ 
 
 
 function goToDashboard()
@@ -16,7 +16,7 @@ function goToDashboard()
 	Alloy.createController('tabBar').getView().open();
 }
 
-
+*/
 
 
 var latitude, longitude;
