@@ -1,12 +1,12 @@
 <Alloy>
-	<Window>
-		<View class="container" layout="vertical" platform="ios">
-			<Toolbar platform="ios" title="Map">
+	<Window title="Map">
+		<View class="container"  platform="ios">
+		<!--	<Toolbar platform="ios" title="Map">
 				<Items>
 					<Button id="btnback" onClick="goToDashboard">Back</Button>
 					
 				</Items>
-			</Toolbar>
+		</Toolbar>-->
 			<View id="mapview" ns="Ti.Map"
 			animate="true" regionFit="true" userLocation="true"
 			mapType="Ti.Map.STANDARD_TYPE" >
@@ -20,9 +20,9 @@
 			</View>
 		</View>
 		<View  class="container" layout="vertical" platform="android">
-			<View height="50" layout="horizontal">
+		<!--	<View height="50" layout="horizontal">
 				<Button id="btnback" left="10" onClick="goToDashboard">Back</Button>
-			</View>
+		</View>-->
 			<View  id="viewMap"></View>
 
 		</View>
