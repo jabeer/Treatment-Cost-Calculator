@@ -83,7 +83,7 @@ function changeMode() {
 			});
 		});
 		editModeFlag = false;
-		$.changeModeBtn.setText('Edit');
+		$.changeModeBtn.setTitle('Edit');
 		
 	} else {
 
@@ -94,7 +94,7 @@ function changeMode() {
 			});
 		});
 		editModeFlag = true;
-		$.changeModeBtn.setText('Done');
+		$.changeModeBtn.setTitle('Done');
 	}
 
 	// Alloy.Collections.favouritesUCC.reset(Alloy.Collections.favouritesUCC.models);

@@ -13,8 +13,8 @@
 		</DashboardView>
 		
 		<View layout="vertical" left="5%" width="90%" height="90%" platform="android">
-			<View layout="horizontal" width="100%" height="50%" onClick="showUrgentCare" >
-				<View  width="50%" height="100%" layout="vertical">
+			<View layout="horizontal" width="100%" height="50%"  >
+				<View  width="50%" height="100%" layout="vertical" onClick="showUrgentCare">
 					<View backgroundImage="/images/plus.png" height="80%"></View>
 					<Label class="lblDashboardItem" >Urgent Care</Label>
 				</View>
@@ -30,7 +30,7 @@
 					<View backgroundImage="/images/urgent_care.png" height="80%"></View>
 					<Label class="lblDashboardItem">Physician Finder</Label>
 				</View>
-				<View layout="vertical"  width="50%" height="100%" onClick="showMap">
+				<View layout="vertical"  width="50%" height="100%" >
 					<View backgroundImage="/images/Insurance.png" height="80%"></View>
 					<Label class="lblDashboardItem">Insurance</Label>
 				</View>

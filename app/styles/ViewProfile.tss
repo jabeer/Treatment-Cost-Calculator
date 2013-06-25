@@ -1,84 +1,181 @@
 ".container": {
 	backgroundColor: "#BDBDBD"
 }
-".formCls":{
-borderRadius:"3px",
-borderColor:"white",
-borderWidth:"1px",
-height:"30" ,
-width:"90%" ,
-left:"5%" ,
-backgroundColor:"white"
 
-}
-".form2Cls[platform:android]":{
-borderRadius:"3px",
-borderColor:"white",
-borderColor:"white",
-width:"90%",
-left:"5%",
-backgroundColor:"white"
-}
-".form2Cls[platform:ios]":{
-borderRadius:"3px",
-borderColor:"white",
-borderWidth:"1px",
-height:"40",
-width:"90%",
-left:"5%" ,
-backgroundColor:"white"
-
-}
-".rightLbl":{
-right:"0",
-color:"#A4A4A4",
+"#personName[platform=android]":
+{
 font:{
-fontSize:14
+		fontSize: 22,
+		fontWeight: 'bold'
+	}
 },
-color:"black"
+
+"#firstTextArea[platform=android]":
+{
+font:{
+		fontSize: 16
+	}
+
+}
+
+"#homeAddress[platform=android]":
+{
+font:{
+		fontSize: 18
+		
+	}
+},
+
+"#daughterAddress[platform=android]":
+{
+font:{
+		fontSize: 18
+		
+	}
+},
+
+".addLocation[platform=android]":
+{
+font:{
+		fontSize: 18,
+		
+	}
+}
+
+
+
+".formCls":{
+	borderRadius: "3px",
+	borderColor: "white",
+	borderWidth: "1px",
+	height: "30" ,
+	width: "90%" ,
+	left: "5%" ,
+	backgroundColor: "white"
+},
+".formCls[platform=android]":{
+	borderWidth: "2px",
+	height: "50"
+}
+
+
+
+".form2Cls[platform=android]":{
+	borderRadius: "3px",
+	borderColor: "white",
+	borderColor: "white",
+	width: "90%",
+	left: "5%",
+	backgroundColor: "white",
+	height: "50"
+},
+".form2Cls[platform=ios]":{
+	borderRadius: "3px",
+	borderColor: "white",
+	borderWidth: "1px",
+	height: "40",
+	width: "90%",
+	left: "5%" ,
+	backgroundColor: "white"
+}
+
+
+".form3Cls[platform=android]":{
+	borderRadius: "3px",
+	borderColor: "white",
+	borderColor: "white",
+	width: "90%",
+	left: "5%",
+	backgroundColor: "white",
+	height: "70"
+},
+".form3Cls[platform=ios]":{
+	borderRadius: "3px",
+	borderColor: "white",
+	borderWidth: "1px",
+	height: "40",
+	width: "90%",
+	left: "5%" ,
+	backgroundColor: "white"
+}
+
+
+
+".rightLbl":{
+	right: "5",
+	color: "#A4A4A4",
+	font:{
+		fontSize: 14
+	},
+	color: "black"
 }
 ".leftLbl":{
-left:"10",
-font:{
-fontSize:14,
-fontWeight:'bold'
-},
-color:"black"
+	left: "10",
+	font:{
+		fontSize: 14,
+		fontWeight: 'bold'
+	},
+	color: "black"
 }
-"#profileAdd[platform=ios]":{
-left:"15",
-top:"10",
- color:"#343434",
-  font:{fontSize:12}
 
+
+".rightLbl[platform=android]":{
+	right: "10",
+	font:{
+		fontSize: 18
+	},
+	color: "black"
+}
+".leftLbl[platform=android]":{
+	left: "10",
+	font:{
+		fontSize: 18,
+		fontWeight: 'bold'
+	}
+	
+}
+
+
+
+
+
+"#profileAdd[platform=ios]":{
+	left: "15",
+	top: "10",
+	color: "#343434",
+	font:{
+		fontSize: 12
+	}
 }
 "#profileAdd[platform=android]":{
-left:"18",
-top:"10",
- color:"#343434",
-  font:{fontSize:12}
-
+	left: "20",
+	top: "10",
+	color: "#343434",
+	font:{
+		fontSize: 18,
+		fontWeight:'bold'
+	}
 }
 ".androidTextArea[platform=android]":{
-borderColor:"white",
-font:{
-fontSize:14,
-fontWeight:'normal'
-},
-color:"black",
-width:"300",
-top:"1",
-height:"90",
-left:0
+	borderColor: "white",
+	font:{
+		fontSize: 14,
+		fontWeight: 'normal'
+	},
+	color: "black",
+	width: "300",
+	top: "1",
+	height: "90",
+	left: 0
 }
 "#firstTextArea[platform=android]":{
-height:"70",
-width:"330",
-borderColor:"white",
-font:{
-fontSize:14,
-fontWeight:'normal',
-fontStyle:"italic"
-},
-color:"black"
+	height: "70",
+	width: "330",
+	borderColor: "white",
+	font:{
+		fontSize: 14,
+		fontWeight: 'normal',
+		fontStyle: "italic"
+	},
+	color: "black"
 }
