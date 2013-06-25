@@ -2,12 +2,12 @@
 	<Window modal="true"  navBarHidden="false"   id="AddToFav"  title="Location saved to favorites"   >
    <View layout="vertical" class="modalInnerView">
    	        <View class="aboutViewHeader" platform="android">
-   	        	<Label text="Location saved to favorites" />
+   	        	<Label text="Location saved to Favorites" />
    	        	<ImageView onClick="doCloseModal" class="closeIcon"  image="/images/closeIcon.png" />
    	         </View> 
    	         <View  layout="horizontal" class="infoText">
    	         <ImageView class="closeIcon"   image="/images/smallHeart.png" left="40" top="30"/>
-   	         <TextArea  class="androidTextArea" left="5" top="30" value="Name of the Lacation has been added to favorites" editable="false"></TextArea>
+   	         <TextArea  class="androidTextArea" left="5" top="30" value="Name of the Location has been added to favorites" editable="false"></TextArea>
    	         </View>
    	        <Button top="10" title="Go to favorites" width="60%" left="20%" onClick="doGoToFav"></Button>
            <Button top="10" title="Undo" width="60%" left="20%" onClick="doUndo"></Button>	

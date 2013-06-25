@@ -111,7 +111,7 @@ Alloy.Globals.tabHome.open(Alloy.Globals.UrgentCareGridView,{animated:true});
 	
 	if(e.index==1)
 	{
-		Alloy.Globals.WhenToUseUrgentCare=Alloy.createController('WhenToUseUrgentCare').getView();
+		Alloy.Globals.WhenToUseUrgentCare=Alloy.createController('WhenToUseUrgentcare').getView();
 			if(Alloy.Globals.searchTap)
 	{
 			
@@ -133,7 +133,7 @@ Alloy.Globals.tabHome.open(Alloy.Globals.WhenToUseUrgentCare,{animated:true});
 	
 	if(e.index==2)
 	{
-		Alloy.Globals.WhenToUseUrgentCare=Alloy.createController('WhenToUseUrgentCare').getView();
+		Alloy.Globals.WhenToUseUrgentCare=Alloy.createController('WhenToUseUrgentcare').getView();
 	if(Alloy.Globals.searchTap)
 	{
 		

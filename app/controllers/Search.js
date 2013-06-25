@@ -1,5 +1,5 @@
 var CustomData = [
-{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Urgent care Centers',hasChild:true },
+{ tlogo:'/images/phy.png', title:"Find an in-network", item:'Urgent Care Centers',hasChild:true },
 { tlogo:'/images/phy.png', title:"Estimates and provides for", item:'Medical Procedures', hasChild:true },
 { tlogo:'/images/phy.png', title:"Find an in-network", item:'Physician Finder', hasChild:true },
 
@@ -32,14 +32,14 @@ width:'auto',
 textAlign:'left',
 top:12,
 left:70,
-height:16
+//height:16,
 });
  if(Ti.Platform.osname=="android")
 {
 	title.left="100";
 	title.top="20";
-	title.font={fontSize:14};
-	title.height="16"
+	title.font={fontSize:18};
+	//title.height="16"
 }
 var item =  Titanium.UI.createLabel({
 text:CustomData[i].item,
@@ -49,14 +49,14 @@ width:'auto',
 textAlign:'left',
 top:30,
 left:70,
-height:16
+//height:16
 });
  if(Ti.Platform.osname=="android")
 {
 	item.left="100";
-	item.top="40";
-	item.font={fontSize:16};
-	item.height="25"
+	item.top="50";
+	item.font={fontSize:22};
+	//item.height="25"
 }
 row.add(tlogo);
 row.add(title);
@@ -78,7 +78,7 @@ var theTable = Titanium.UI.createTableView({
 	 borderWidth: '3px',
 	  data:rdata,
 	 height: Ti.UI.SIZE,
-	 	  footerTitle:''
+	 //	  footerTitle:''
 });
 if(Ti.Platform.osname=="android")
 {

@@ -63,7 +63,8 @@ var lstUrgentCareCentres = {
             type: 'Ti.UI.ImageView',     // Use a label for the subtitle
             bindId: 'favorite',       // Maps to a custom es_info property of the item data
             properties: {            // Sets the label properties
-                             right: '50dp', top: 0,
+                             right: '50dp', top: 5,
+                             
             }
         }
     ],
@@ -76,6 +77,8 @@ if(OS_ANDROID)
 {
 	lstUrgentCareCentres.properties.height = 95;
 	lstUrgentCareCentres.childTemplates[4].properties.right = '60dp';
+	lstUrgentCareCentres.childTemplates[4].properties.height = 25;
+	lstUrgentCareCentres.childTemplates[4].properties.width = 25;
 	lstUrgentCareCentres.childTemplates[3].properties.right = '20dp';
 	lstUrgentCareCentres.childTemplates[1].properties.top = '22dp';
 	lstUrgentCareCentres.childTemplates[2].properties.top = '44dp';
