@@ -9,7 +9,7 @@
 				<Label class="lblResult">Results within 5 miles of Plymouth, MI</Label>
 			</View>
 				</View>
-			<Button id="whyUseCareBtn" onClick="onWhyUseCareBtn" height="35">Why Use Urgent Care?</Button>
+			<Button id="whyUseCareListBtn" onClick="onWhyUseCareBtn" >Why Use Urgent Care?</Button>
 	
 </View>
 

@@ -1,7 +1,14 @@
 var args=arguments[0] || 0;
 function doGoToFav(){
 		$.AddToFav.close();
+		if(OS_ANDROID){
+	//Alloy.Globals.tabHome.close();
+	// var win = Titanium.UI.currentWindow;
+	// win.close();
+	Alloy.createController('tabBar').getView().open();
+}
 		Alloy.Globals.tabGrp.setActiveTab(Alloy.Globals.tabFav);
+		
 	
 }
 function doCloseModal()

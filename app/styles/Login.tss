@@ -2,8 +2,20 @@
 	backgroundColor: "white"
 },
 
-".lblTCC":
+".lblTCC[platform=android]":
 {
+width:'45%',
+color:'black',
+ 	font:
+ 	 {
+ 	 fontWeight:'bold',
+  		fontSize:22,
+	  	fontFamily:'Comic Sans MS'  	
+  	}
+},
+".lblTCC[platform=ios]":
+{
+color:'black',
  	font:
  	 {
   		fontSize:22,
@@ -30,12 +42,14 @@
 ".textfieldLogin":
 {
  
-  	borderWidth:2,
-  	borderColor:'black',
+
  	hintText:'Enter SSO# or Username',
  	top:'10%',
- 	height:50,
- 	width:'80%'
+	height : Titanium.UI.SIZE,
+ 	width:'80%',
+ 	borderWidth:2,
+ 	backgroundColor:'transparent',
+  	borderColor:'black'
 },
 
 "#btnGo":

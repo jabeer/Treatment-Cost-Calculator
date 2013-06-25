@@ -21,37 +21,43 @@ Alloy.Globals.getFavouritesUCCData = function() {
 	 	        "center_name": "Urgent Care of Polymouth ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-8121",
+	            "center_distance":"5.5 mi",
 	            "ifFav" : "Yes"
 	       },
 	       {
 	 	        "center_name": "First Urgent Care  ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-2121",
+	            "center_distance":"7.2 mi",
 	            "ifFav" : "Yes"
 	       },
 	       {
 	 	        "center_name": "Urgent Care Centers ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-9931",
+	            "center_distance":"5.6 mi",
 	            "ifFav" : "No"
 	       },
 	       {
-	 	        "center_name": "Urgent Care of Polymouth ",
+	 	        "center_name": "Urgent Care of Polymouth 1",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-8121",
+	            "center_distance":"2.5 mi",
 	              "ifFav" : "No"
 	            
 	       },
 	       {
-	 	        "center_name": "First Urgent Care  ",
+	 	        "center_name": "First choice Urgent Care  ",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-2121",
+	            "center_distance":"5.5 mi",
 	              "ifFav" : "No"
 	       },
 	       {
-	 	        "center_name": "Urgent Care Centers ",
+	 	        "center_name": "Urgent Care Centers 3",
 	            "center_address": "10 main Street of Polymouth",
 	            "center_phone":"(555) 555-9931",
+	            "center_distance":"1.8 mi",
 	             "ifFav" : "Yes"
 	        }
 	

@@ -23,4 +23,13 @@
 {
 	height:100,
 	accessoryType:Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE
+},
+"#whyUseCareListBtn[platform=android]":{
+
+height:58
+},
+"#whyUseCareListBtn[platform=ios]":{
+
+height:35
 }
+
