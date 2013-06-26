@@ -38,7 +38,7 @@ width:'90%'
 {
 width:'95%',
 font:{
-	fontSize:18,
+	fontSize:18
 	
 	},
 	color: 'black'
